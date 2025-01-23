@@ -1,0 +1,37 @@
+#my-button {
+  color: green;
+  background-color: greenyellow;
+  border-radius: 30px;
+  font-size: large;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* Hover Durumu - Fare ile üzerine gelince */
+#my-button:hover {
+  color: greenyellow;
+  background-color: green;
+}
+
+/* Active Durumu - Tıklanırken */
+#my-button:active {
+  color: yellow; /* Zıt renk */
+  background-color: darkgreen; /* Zıt renk */
+  transform: scale(0.98);
+}
+
+/* Tıklanmış ve ziyaret edilmiş bağlantı */
+#my-button:visited {
+  color: darkred; /* Zıt renk */
+  background-color: yellowgreen;
+}
+
+/* Focus Durumu - Bağlantıya tıklanıp odaklanıldığında */
+#my-button:focus {
+  outline: none; /* Odaklanınca etrafındaki çizgiyi kaldırabiliriz */
+  color: white;
+  background-color: darkblue;
+}
