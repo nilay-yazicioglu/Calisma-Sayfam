@@ -1,0 +1,43 @@
+#hastane {
+  color: red ;
+  padding: 20px 40px ;
+  background-color: lightcoral;
+  font-size: large;
+  font-weight: bold;
+} 
+
+
+
+/* classımın  Normal Özellikleri */
+
+
+.calisanlar {
+  color: bisque ;
+  padding: brown;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size:large ;
+}
+
+/* Hover Durumu - Fare ile üzerine gelince */
+.calisanlar:hover {
+  color:black ;
+  background-color: whitesmoke;
+  cursor: pointer;
+}
+
+/* Active Durumu - Tıklanırken */
+.calisanlar:active {
+  color: whitesmoke;
+  background-color: black ;
+  transform: scale(0.90);
+}
+
+/* Tıklanmış ve ziyaret edilmiş bağlantı */
+.calisanlar:visited {
+  color:red ;
+  background-color: white;
+}
+
+
+
