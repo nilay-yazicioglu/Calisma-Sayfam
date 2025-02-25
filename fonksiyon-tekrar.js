@@ -15,7 +15,11 @@ function checkenter(kullanici, sifre) {
 let mesaj = checkenter("Nilaay", "1234");
  console.log(mesaj)
 
-//  arrow fonksiyon tekrarı ve propmt girdisi tekrarım.
+//  arrow fonksiyon tekrarı ve propmt girdisi tekrarım 
+//sistem fonksiyonuna isim diye parametre atadım sonrasında fonksiyonu çağırırken isim() kullandım.
+// çünkü isim bir fonksiyon ve çağrıldığında gelir. ama parametre olarak isim yazdım, 
+// yani isim = isim() oldu otomatikmen.
+
 const selamla = () => `Welcome to our wonderful page !!!! `
 const isim = () => prompt("isminizi giriniz")
 
