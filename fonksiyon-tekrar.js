@@ -1,3 +1,5 @@
+// if ile fonksiyon kullanımını birleştirdim.
+
 function selamla() {
   return ("selamlar ben Nilay")
 }
@@ -12,3 +14,18 @@ function checkenter(kullanici, sifre) {
 
 let mesaj = checkenter("Nilaay", "1234");
  console.log(mesaj)
+
+//  arrow fonksiyon tekrarı ve propmt girdisi tekrarım.
+const selamla = () => `Welcome to our wonderful page !!!! `
+const isim = () => prompt("isminizi giriniz")
+
+function sistem(isim, pass) {
+  
+  if( isim === "Nilay" && pass === "1234" ) {
+    return `succesfully entered ` + selamla() 
+  } else {
+    return `try again, invalid user name or pass`
+  }
+}
+ console.log(sistem(isim(), "1234"))
+
