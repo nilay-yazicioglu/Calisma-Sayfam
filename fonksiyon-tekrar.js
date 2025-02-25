@@ -1,3 +1,27 @@
+// arrow fonksiyon kullanarak toplama ve çıkarma yaptım.
+let topla = (a,b) => a+b;
+let sonuc = topla(6,7); 
+console.log(sonuc)
+
+let cikar = (a,b) => a-b;
+let sonuc2 = cikar(6,1);
+console.log(sonuc2)
+
+// bir sayının çift sayı mı değil mi onu kontrol eden bir fonksiyon döndürdüm.
+
+function checkDouble(a) {
+  if (a % 2 === 0) {  // bu satırda a sayısının 2 ye bölümünden kalan 0 ise çift sayıdır, değilse çift sayı değildir.
+    return `It's DOUBLE  `
+  } else {
+    return `It's not DOUBLE :( `
+  }
+} 
+ console.log(checkDouble(a))
+
+
+
+
+
 // if ile fonksiyon kullanımını birleştirdim.
 
 function selamla() {
@@ -32,4 +56,6 @@ function sistem(isim, pass) {
   }
 }
  console.log(sistem(isim(), "1234"))
+
+
 
