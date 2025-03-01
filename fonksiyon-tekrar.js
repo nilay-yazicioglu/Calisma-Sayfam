@@ -10,6 +10,8 @@ let sonuc2 = cikar(6,1);
 console.log(sonuc2)
 
 // bir sayının çift sayı mı değil mi onu kontrol eden bir fonksiyon döndürdüm.
+//Return fonksiyonların çıkış kapısıdır. Browser returnu görünce fonksiyonun işini bitirdiğini anlar.
+//returnden sonraki satırları browser okumaz.
 
 function checkDouble(a) {
   if (a % 2 === 0) {  // bu satırda a sayısının 2 ye bölümünden kalan 0 ise çift sayıdır, değilse çift sayı değildir.
@@ -88,6 +90,48 @@ function yaziTura10defa() {
   }
 }
  yaziTura10defa()
+
+
+// prompt() fonksiyonu her zaman   STRING türünde veri döndürür. 
+//Yani, pass === 123 ifadesinde 123 sayısı bir number türü iken, prompt() ile aldığınız değer her zaman bir 
+//string olacaktır. Bu yüzden, pass değişkeni "123" (string) olmalı ve karşılaştırmada da string türünde olmalıdır.
+//prompt() fonksiyonunu kullanırken bunun sadece string döndürdüğünü unutma.Yoksa kod düzgün çalışmaz.
+
+function giris() {
+  let username = prompt("isminizi giriniz")
+  let pass = prompt("şifrenizi giriniz")
+  if(username === "nilay" && pass === "123") {
+   console.log( `${username} olarak `+kartMesajiGöster())
+  } else {
+    console.log( `şifre veya username yanlış.Lütfen tekrar deneyiniz.`)
+  }
+}
+
+
+giris()
+
+
+//parametreler, fonskiyonda kullanılacak değerleri temsil eden referanslardır. Aşağıdaki kodda mesaj bir parametredir.
+// parametrenin yerine geçen gerçek değerlere de arguman denir. Parametreler yer tutuculardır, argumanlar ise gerçektir
+// "lütfen şifrenizi giriniz" bu mesela bir argumandır.
+
+function uyari(mesaj) {
+  console.log(mesaj)
+}
+
+uyari("lütfen kartınızı almayı unutmayın !")
+
+uyari("hoşgeldiniz, size nasıl yardımcı olabilirim ?")
+uyari("lütfen şifrenizi giriniz")
+
+
+// iki parametre de alabilir. Burda uyarı fonksiyonunu çağırırken isim argumanı da "" içinde olamalı 
+//yoksa kod çalışmaz çünkü değişken zanneder ve parametrelerin sırası ile argumanların sırası aynı olmalı. 
+
+function uyari(mesaj,isim) {
+  console.log(mesaj+ " " + isim)
+}
+uyari("bankamıza hoşgeldiniz", "Nilay" )
 
 
 
