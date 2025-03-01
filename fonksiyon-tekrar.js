@@ -1,3 +1,5 @@
+//fonksiyonların kısayol tuşları gibidir. Ardı ardına yapılan işlemleri tekrar tekrar baştan yazmak yerine 
+//bir kere yazıp onu çağırırız. 
 // arrow fonksiyon kullanarak toplama ve çıkarma yaptım.
 let topla = (a,b) => a+b;
 let sonuc = topla(6,7); 
@@ -56,6 +58,37 @@ function sistem(isim, pass) {
   }
 }
  console.log(sistem(isim(), "1234"))
+
+
+//for döngülerinde önce sayiyi tanımlarsan sayi sadece bir kez oluşturulur, her defasında yeni bir 
+//sayı oluştursun istersen sayi değişkenini for döngüsünün içerisine yazman gerekir. UNUTMA BUNU.
+
+//FONSKİYON 1 BU KOD 10 TANE YAZI VEYA 10 TANE TURA YAZDIRIR.
+function yaziTura10defa() {
+  let sayi = Math.random()
+  for(let i=0; i<10; i++) {
+    if(sayi<0.5) {
+      console.log("tura")
+    } else {
+      console.log("yazı")
+    }
+  }
+}
+ yaziTura10defa()
+
+//FONSKİYON 2 BU KOD HER DEFASINDA FARKLI BİR SAYI OLUŞTURUR.
+function yaziTura10defa() {
+  for(let i=0; i<10; i++) {
+    let sayi = Math.random()
+    if(sayi<0.5) {
+      console.log("tura")
+    } else {
+      console.log("yazı")
+    }
+  }
+}
+ yaziTura10defa()
+
 
 
 
