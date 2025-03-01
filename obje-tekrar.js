@@ -20,3 +20,16 @@ delete kedi.kilo
 console.log(kedi)
 console.log(kedi.color)
 console.log(kedi[kilo]
+
+// obje içinde obje de açabilirsin, aşağıdaki gibi 
+            
+let hastane = {
+  adres:"Ankara",
+  "kaç şubesi var?":12,
+  "çalışan sayısı":{
+      fizyoterapist:14,
+      ergoterapist:4,
+      "konuşma terapisti":2, }
+}
+
+console.log(hastane["çalışan sayısı"])
