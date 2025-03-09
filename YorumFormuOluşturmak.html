@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Örneği</title>
+</head>
+<body>
+
+    <h1>Yorum Formu</h1>
+    
+    <form id="yorumFormu">
+        <label for="yorum">Yorumunuzu buraya yazınız:</label><br>
+        <textarea id="yorum" name="yorum" rows="4" cols="50"></textarea><br><br>
+        <button type="submit">Gönder</button>
+    </form>
+
+    <script>
+        // Form verilerini işleyecek JavaScript
+        const form = document.getElementById('yorumFormu');
+        
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();  // Sayfanın yenilenmesini engeller
+            
+            const yorum = document.getElementById('yorum').value;
+            
+            // Yorum bilgisini konsola yazdırıyoruz
+            console.log("Gönderilen Yorum: " + yorum);
+            
+            // Burada form verisini sunucuya gönderebilir ya da başka bir işlem yapabilirsiniz
+        });
+    </script>
+
+</body>
+</html>
