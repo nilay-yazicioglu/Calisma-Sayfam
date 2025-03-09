@@ -134,5 +134,9 @@ function uyari(mesaj,isim) {
 uyari("bankamıza hoşgeldiniz", "Nilay" )
 
 
+// ARROW FONKSİYONU:  () => {}   İŞTE BU KADAR :) 
+
+
+
 
 
