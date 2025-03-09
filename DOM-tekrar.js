@@ -51,6 +51,38 @@ remove = silmek için
 
 #####querySelector ile seçim yaaprsan karşısına çıkacak ilk elemanı getirir. querySelectorAll dersen o zamanda yazdığın tüm elemnaları getirir.
 
+click eventi = tıklandığında bir işlem yaptırır
+dblclick eventi = çift tıklandığında bir işlem yaptırır
+mouseover eventi = fare üzerinde geldiğinde yapılacak işlem 
+mouseout eventi = fare üzerinden çıktığında yapılacak işlem 
+keydown eventi = klavye tuşun abasıldığında yapılacak işlem 
+keypress = Bir tuşa basıldığında, karakter girildiğinde tetiklenir (artık önerilmez).
+keyup =  Bir tuş bırakıldığında tetiklenir.
+
+
+form oluşturmak: 
+-kredi kartı bilgilerini girdiğin sayfa bir form örneği, kullanıcı ve sistem arasındaki köprü formdur.
+<form> = kullanıcıdan veri almak için kullanılır. kendine özgü bir görüntüleri yok 
+<label> = etiket eklemek için kullanılır. kullanıcadan neyi girmesini istiyorsanız o, kullanıcı adı,şifre gibi
+<textarea> = kullanıcın çok satırlı metin girişi yapmasını sağlar.Yorum gibi. 
+<button> = kullanıcının tıklamasıyla bir işlemi başlatmak için kullanılır. Genelde form verilerini göndermek için kullanılır,
+form dışında da kullanılabilir.
+## yukarıdaki bilgiler kullanıcıdan aldıkları bilgileri işlemek için bir arayüz sağlar. 
+## arayüz (interface)= İki tane farklı şeyi biribiriyle konuşturan, haberleştiren sistem. 
+Kullanıcı ve sistem arasındaki iletişimi sağlayan sistem de form. 
+
+
+Event Objesi : olayla ilgili verileri tutan object yani obje
+Örnek:bir fare tıklama olayı için, event nesnesine tıklamanın tam olarak nerede gerçekleştiğini (x y koordinatları ile) 
+hangi düğmenin tıklanmış olduğunu (sağ-sol-orta) ve tıklama da hangi tuşların basılı olduğunu (shift, ctrl) içerir.
+barista=eventListener, kahve yapmak=callback function, adisyon=event objesi
+
+
+
+
+
+
+
 
 
 
