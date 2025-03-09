@@ -31,3 +31,57 @@ document.body.appendChild(kapsam); // En son oluşturduğun kapsam adli divi bod
   </script>
 </body>
 </html>
+
+
+//yukarıdaki koda form ekliyorum.
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basit HTML Sayfası</title>
+</head>
+<body>
+
+    <h1>Birinci Başlık</h1>
+    <p>Bu, birinci paragrafın içeriğidir. Burada basit bir metin yazıyoruz.</p>
+
+    <h2>İkinci Başlık</h2>
+    <p>İkinci paragraf burada yer alıyor. Burada farklı bir metin bulunuyor.</p>
+  <script> 
+  let ucuncuBaslik = document.createElement("h1");
+ucuncuBaslik.id = "baslikUc";
+ucuncuBaslik.textContent = "Üçüncü Başlık"
+
+let ucuncuParagraf = document.createElement("p");
+ucuncuParagraf.id = "paragrafUc"
+ucuncuParagraf.textContent = "Bu, üçüncü paragrafın içeriğidir. Burada basit bir metin yazıyoruz."
+    
+const kapsam = document.createElement("div")
+
+kapsam.appendChild(ucuncuBaslik);
+kapsam.appendChild(ucuncuParagraf);
+    
+document.body.appendChild(kapsam);  
+const yorumFormu = document.createElement("form");
+yorumFormu.id = "comment";
+
+const label = document.createElement("label");
+label.id = "etiket";
+label.textContent = "Yorumunuzu buraya yazınız.";
+yorumFormu.appendChild(label);
+    
+let yorumAlani=document.createElement("textarea");
+yorumAlani.textContent = "yorumunuzu yazınız.";
+yorumFormu.appendChild(yorumAlani);
+
+    
+let buton = document.createElement("button");
+buton.textContent = "Gönder";   
+yorumFormu.appendChild(buton);
+document.body.appendChild(yorumFormu); 
+  </script>
+</body>
+</html>
+
