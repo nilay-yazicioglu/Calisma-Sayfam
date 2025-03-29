@@ -1,0 +1,61 @@
+Imperative (Emirsel) Programlama
+Imperative programlama, "ne yapılacağını değil, nasıl yapılacağını" anlatan bir yaklaşımdır. Yani, bu yaklaşımda bir işlem ya da problemi çözerken, 
+adım adım yapılacak işlemler sırasıyla belirtilir. Kodu yazan kişi, bilgisayara ne yapması gerektiğini ve nasıl yapması gerektiğini açıkça söyler.
+
+Ne demek?: Programcı, her bir adımı tek tek tanımlar ve bilgisayara bu adımları nasıl gerçekleştireceğini söyler.
+
+Kodu nasıl yazarsınız?: Adım adım, işlem sırasını belirler, kontroller ekler ve yan etkilerle birlikte işlemi kontrol edersiniz.
+
+Declarative (Açıklayıcı) Programlama
+Declarative programlama, "ne yapılması gerektiği" ile ilgilidir. Bu yaklaşımda, programcı ne yapmak istediğini belirtir, 
+ancak nasıl yapılacağını bilgisayara bırakır. Yani, programcı yalnızca sonuca odaklanır ve bu sonuca nasıl ulaşılacağını detaylı bir şekilde belirtmez.
+
+Ne demek?: Programcı, hedefi tanımlar, ancak hedefe ulaşmak için gereken adımları bilgisayara bırakır.
+
+Kodu nasıl yazarsınız?: Daha az kontrol yapar, daha yüksek seviyeli soyutlamalar kullanılır ve genellikle daha kısa ve daha anlaşılır kod yazılır.
+
+REACT = Declarative bir UI ( kullanıcı arayüzü kütüphanesi ) UI = User interface 
+REACT AMAÇLARI 
+-componentlerle çalışmayı kolaylaştırmak,
+-DOM işlemlerini daha performanslı yapmayı sağlamak,
+-Kodların yönetebilirliğini arttırmak,
+
+JSX formatı nedir? 
+-HTML, CSS ve JSyi aynı dosyada yazılabildiği dosya formatı. 
+
+Virtual DOM:Sayfadaki  etkileşimleri hızlı ve performanslı yapmak için bir yöntem.
+
+JSX ÖZELLİKLERİ:
+hem js özelliklerini kullanabileyim hem de html dosyasının sınıflama yapısını kullanayım. Bu ikisini birleştirmişler jsx çıkmış ortaya.
+!!! browser js içindeki html dosyalarını okuyamaz ve hata verir.
+BABEL= JSX kodlarını browserın anlayacağını js kodlarına çevirir. Tercüman gibi düşün. Çevirmen kütüphane.
+!React componentlerle birlikte kod okuması daha kolay hale geliyor. 
+Babeli kullanırken <script type="text/babel"> bunu eklemeyi unutma. 
+-render etmek sayfaya eklemek gibi düşünebilirsin.
+-jsx kodunda bir süslü parantez varsa bil ki orada jsden bir özellik kullanmaya çalışıyoruz {} 
+-return bölümü js içindeki bir DOM penceresi gibi düşünülebilir. {} ile return  edilen kodun içinde js dünyasına bir pencere açıp js yazabilirsin. 
+fakat return içinde olduğun için kısa ve return eden şeyler yazılabiliir. ternary if veya and or && gibi operatörler kullanılabilir.
+-reactta component jsx return eden bir fonksiyon anlamına gelir.
+fonksiyon haline getirince;
+-yazdığımız kod component haline gelince fonksiyon isminin ilk harfi BÜYÜK yazılır.React onun normal bir html elemanı değil component olduğunu anlasın diye.
+-sayfaya yerleştirilirken (render edilirken) html elemanı gibi <> arasına yazılır.
+
+!!!! jsx dosyalarını isimlendirme nasıl yapılır ?
+index.js ve index.jsx her ikisi de kullanılabilir, ancak index.js daha yaygın ve standarttır.
+JSX kullandığınız dosyalar için .jsx uzantısını kullanabilirsiniz, ancak çoğu zaman .js uzantısı yeterlidir ve JSX'i de içerir.
+
+React'ta Bileşen (Component), bir kullanıcı arayüzü parçasını temsil eden bağımsız ve yeniden kullanılabilir bir yapıdır. 
+React, UI'yi bileşenler halinde tasarlar ve her bileşen, kullanıcıya gösterilen bir kısım olabilir. React'ta bileşenler, 
+hem görsel (UI) kısmı hem de bileşenin işlevsel mantığını içerir.
+
+Bileşenler, genellikle JavaScript fonksiyonları veya sınıfları (class) olarak tanımlanır ve kullanıcı arayüzündeki belirli bir bölümü temsil ederler.
+Bileşenlerin amacı, belirli bir işlevi yerine getirmek, kullanıcı etkileşimini yönetmek ve UI öğelerini (metin, butonlar, form elemanları, vb.) render etmektir.
+
+REACT COMPONENT ANATOMİSİ 
+-JSX return eden fonksiyonlar,
+-Kendi fonksiyonları olabilir,
+-Reactın özel fonksiyonlarını kullanabilir (hooks)
+!!! bir component görüyorsam bu ne return ediyor sayfaya ne ekliyor ? Bunlar aklına gelsin.
+
+
+
