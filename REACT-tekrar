@@ -57,5 +57,19 @@ REACT COMPONENT ANATOMİSİ
 -Reactın özel fonksiyonlarını kullanabilir (hooks)
 !!! bir component görüyorsam bu ne return ediyor sayfaya ne ekliyor ? Bunlar aklına gelsin.
 
+Reactta neden componentler oluşturuyoruz? 
+-tekrar kullanılabilirlik,
+-durum yönetimi (react componentleri yani bileşenleri her bileşenin kendi durumunu yönetmesine olanak sağlar)
+-performans iyileştirmesi,
+-deklaratif programlama ( bunun sonuç odaklı bir programlama olduğunu hatırla) 
+
+
+!!! REACT JSX formatında bir fonksiyon döndürmelidir. 
+
+Click eventi ile çalışmak;
+-normalde addeventlistener kullanıyoruz reactta ise bunu onClick={çalışacak fonksiyon} ekle bu şunla aynı şey onClick={event => calisacakFonksiyon(event)}
+
+
+
 
 
