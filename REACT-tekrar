@@ -84,6 +84,7 @@ Props kavramı:
 -props, var olan html attributelarını kapsar, ancak yalnızca onlarla sınırlı değildir.
 -props ile her türlü js değerini, objeleri, dizileri ve fonksiyonları aktarabiliriz.
 
+!!! bir componentin içinde props tanımlanır ve çocuk componente aktarılır. (reactta props componente nasıl geçirilir)
 
 
 
