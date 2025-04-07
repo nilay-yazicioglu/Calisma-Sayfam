@@ -70,6 +70,21 @@ Click eventi ile çalışmak;
 -normalde addeventlistener kullanıyoruz reactta ise bunu onClick={çalışacak fonksiyon} ekle bu şunla aynı şey onClick={event => calisacakFonksiyon(event)}
 
 
+STATE KAVRAMI VE ÖZELLİKLERİN + EXPORT IMPORT İŞLEMLERİNİ COMMIT ETMEYİ UNUTMUŞSUN !!! O YÜZDEN O VİDEOLAR TEKRAR İZLENİLİP NOT ALINCAK
+
+reactın 3 temel elemanı;
+-component:yeniden kullanılabilir kod parçaları, legolar gibi düşün.
+-state: componentlerin hafızalrı, interaktifliğin temeli,
+-props:componentler arası veri paylaşımı (html elemanlarındaki attribute konseptine benzer, fonksiyonlardaki parametre kullanımına benzer ) 
+props proportiesin kısaltması props.
+
+Props kavramı:
+-react componentleri birbiri ile iletişim kurmak için props kullanır.
+-her parent compenent, child componentlerina props vererek onlara bazı bilgiler aktarabilir. 
+-props, var olan html attributelarını kapsar, ancak yalnızca onlarla sınırlı değildir.
+-props ile her türlü js değerini, objeleri, dizileri ve fonksiyonları aktarabiliriz.
+
+
 
 
 
