@@ -47,6 +47,8 @@ JSX kullandığınız dosyalar için .jsx uzantısını kullanabilirsiniz, ancak
 React'ta Bileşen (Component), bir kullanıcı arayüzü parçasını temsil eden bağımsız ve yeniden kullanılabilir bir yapıdır. 
 React, UI'yi bileşenler halinde tasarlar ve her bileşen, kullanıcıya gösterilen bir kısım olabilir. React'ta bileşenler, 
 hem görsel (UI) kısmı hem de bileşenin işlevsel mantığını içerir.
+!!! bir kodun component olduğunu nereden anlarsın ? Componentler büyük harfle başlar.HTML elemanları (<div>, <img> vs...) ise küçük harfle başlar.
+
 
 Bileşenler, genellikle JavaScript fonksiyonları veya sınıfları (class) olarak tanımlanır ve kullanıcı arayüzündeki belirli bir bölümü temsil ederler.
 Bileşenlerin amacı, belirli bir işlevi yerine getirmek, kullanıcı etkileşimini yönetmek ve UI öğelerini (metin, butonlar, form elemanları, vb.) render etmektir.
@@ -84,7 +86,37 @@ Props kavramı:
 -props, var olan html attributelarını kapsar, ancak yalnızca onlarla sınırlı değildir.
 -props ile her türlü js değerini, objeleri, dizileri ve fonksiyonları aktarabiliriz.
 
+prop nasıl yazılır ?
+<BileşenAdi propAdi={değer} />
+
+Nerede? | Ne yapıyoruz?
+Kullandığımız yerde | <Card kisi={person} /> → Prop'u yazıyoruz
+Bileşen tanımında | function Card({ kisi }) → Prop'u alıyoruz
+
+state: bileşenin hafızasıdır.React'te state, bir bileşenin (component) o anki durumunu temsil eder.
+Yani kullanıcıyla etkileşim sonucu değişebilecek, bileşenin davranışını ve görüntüsünü etkileyen 
+verileri saklamak için kullanılır. 
 !!! bir componentin içinde props tanımlanır ve çocuk componente aktarılır. (reactta props componente nasıl geçirilir)
+
+destructuring : propsun içinden parçalara ayırıp onları bir değişkene atıyoruz buna da destructuring denir, js özelliğidir 
+react özelliği değildir, reactta çok kullanılır. props.person (person örnek olsun diye) yazmanın kısa yoludur. component adından sonraki 
+normal parantezler arasına süslü parantez koymaya dikkat !!! 
+
+PROPS ÖZELLİKLERİ 
+1-html elemanlarının sahip oldukları attributeler
+2-bizim tanımladığımız proplar
+3-child prop (component tagleri arasında kalan kısım )
+
+!!! proplar child componentler içinde okunabilir ama değiştirilemez.Değişikleri parent componentinde yapmalısın
+
+!!! react uygulamalarında veri parent componenttan child componente doğru akar.Parentta saklanır 
+child componentlere dağılır 
+state kaldırmak : childdaki veriyi parente taşımak.(kolay yönetim için tek yöne akan trafik gibi)
+
+Parenttaki veriyi nasıl değiştiririz ? 
+-veri akışı tek yönlü olduğu için veriyi direkt parente iletemeyiz.
+-ne yapmalısın ? -> anahtarını kaybeden adam örneğini hatırla
+parent içindeki veriyi değiştiren bir fonksiyonu child prop olarak iletmelisin. 
 
 
 
