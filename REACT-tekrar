@@ -118,6 +118,17 @@ Parenttaki veriyi nasıl değiştiririz ?
 -ne yapmalısın ? -> anahtarını kaybeden adam örneğini hatırla
 parent içindeki veriyi değiştiren bir fonksiyonu child prop olarak iletmelisin. 
 
+!!! önceden class componentleri vardı şimdi functional componentler var
+!!! projedeki tüm componentleri aynı anda göremeyiz akışa göre ekleme çıkarma yaparsın (bir tiyatro oyuncusu gibi = component)
+
+component lifecycle: componentin yaşamı, componentin sayfadaki serüveni
+mount: bir componentin ortaya çıkışı
+update: componentin kıyafet değiştirmesi 
+unmount: bir componentin inişi
+
+state değişikliği ve component lifecycle ilişki 
+USEEFFECT NOTLARI ÇIKAR
+ 
 
 
 
