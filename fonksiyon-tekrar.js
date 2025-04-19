@@ -133,6 +133,39 @@ function uyari(mesaj,isim) {
 }
 uyari("bankamıza hoşgeldiniz", "Nilay" )
 
+!!! Callback'ler genellikle asenkron işlemlerde çok kullanılır.Mesela bir veri çekme veya bir işlem tamamlandığında
+  ne yapılacağını belirtmek için.
+
+  !!! callback fonksiyonları nedir ? = bir fonksiyon çalışması tamamlandıktan sonra başka bir fonksiyonun 
+  çalışmasını sağlayan fonsksiyonlardır.
+
+  Klasik cb fonksiyonu matematiği:
+  setTimeout(()=>{buraya console.log() yapabilirsin },2000) BU  BİR CBDİR.2000 
+    yazan şey ms kaç saniye sonra yazdığın fonksiyonu çalıştıracağını söylüyorsun 
+    bu yüzden de asenkron işlemlerde çok kullanılır. 
+      
+  paramtreli cb fonksiyonu yazımı:
+    function işleVeYaz(cb) {
+  const isim = "Nilay"; // Örnek veri (sanki bir yerden geldi gibi) 
+  cb(isim);             // Callback fonksiyona bu veriyi yolluyoruz
+}
+!!!Yani isim = "Nilay" kısmı, senin callback fonksiyonuna "Bak ben sana bir bilgi verdim,
+  ne yapacağını sen belirle" diyebilmek için orada. Callback'in amacı genelde dışarıdan 
+  gelen veriyle bir işlem yapmak ya.
+  Burası, fonksiyonun sana bir hediye kutusu gönderdiği kısım 🎁
+  Kutunun içinde "Nilay" var.
+  Sen de callback fonksiyonla kutuyu açıyorsun ve içindekini nasıl
+  kullanacağını sen karar veriyorsun. 
+    
+    Unutma:
+Callback fonksiyon = başkasının çağıracağı fonksiyon
+
+Parametre = çağrıldığında dışarıdan gelecek veri
+
+Arrow ya da normal function olabilir
+
+  !!! length bir metot değil bir propertydir ve () almaz 
+
 
 // ARROW FONKSİYONU:  () => {}   İŞTE BU KADAR :) 
 
